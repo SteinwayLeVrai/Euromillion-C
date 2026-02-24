@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 
 int main(void){
 
@@ -86,6 +87,7 @@ int main(void){
 
     *(res + i) = n;
     printf("Tirage %d : %d\n",i + 1, *(res + i));
+    usleep(700000);
   }
 
  
@@ -108,6 +110,7 @@ int main(void){
 
     *(res_e + i) = n;
     printf("Tirage etoile %d : %d\n",i + 1, *(res_e + i));
+    usleep(700000);
   }
 
   printf("\n");
