@@ -32,7 +32,7 @@ int main(void){
 
   // Boucle pour numero joueur 
   
-  for (int i = 0; i <= 4; i++){
+  for (int i = 0; i < 5; i++){
     scanf("%d", (num + i));
     while (*(num + i) > 50 || *(num + i) < 1){
       printf("Numero %d invalide \n", i + 1);
@@ -51,7 +51,7 @@ int main(void){
 
   // Boucle pour numero joueur etoile
   
-  for (int i = 0; i <= 1; i++){
+  for (int i = 0; i < 2; i++){
     scanf("%d", (num_e + i));
     while (*(num_e + i) > 12 || *(num_e + i) < 1){
       printf("Numero %d invalide \n", i + 1);
@@ -69,7 +69,7 @@ int main(void){
   printf("\n");
 
       // Boucle pour resultat
-  for (int i = 0; i <= 4; i++){
+  for (int i = 0; i < 5; i++){
     int n,ok;
 
     do {
@@ -91,7 +91,7 @@ int main(void){
  
 
   //Boucle pour resultat etoile
-  for (int i = 0; i <= 1; i++){
+  for (int i = 0; i < 2; i++){
     int n,ok;
 
     do {
@@ -116,8 +116,8 @@ int main(void){
 
   // Boucle pour comparé
 
-  for (int i = 0; i <= 4; i++){
-    for (int j = 0; j <= 4; j++){
+  for (int i = 0; i < 5; i++){
+    for (int j = 0; j < 5; j++){
       if (*(num + i) == *(res + j)){
 	printf("Bon numéro : %d\n", *(num + i));
 	cpt++;
@@ -127,8 +127,8 @@ int main(void){
 
   // Boucle pour comparé etoile
 
-  for (int i = 0; i <= 1; i++){
-    for (int j = 0; j <= 1; j++){
+  for (int i = 0; i < 2; i++){
+    for (int j = 0; j < 2; j++){
       if (*(num_e + i) == *(res_e + j)){
 	printf("Bon numero etoile : %d\n", *(num_e + i));
 	cpt_e++;
