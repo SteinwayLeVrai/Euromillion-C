@@ -7,24 +7,20 @@ int main(void){
   srand(time(NULL));
 
   int *num = malloc(5 * sizeof(int));
-  if (num == NULL){
-    exit(EXIT_FAILURE);
-  }
+
   
   int *num_e = malloc(2 * sizeof(int));
-  if (num_e == NULL){
-    exit(EXIT_FAILURE);
-  }
+
 
   
   int *res = malloc(5 * sizeof(int));
-  if (res == NULL){
-    exit(EXIT_FAILURE);
-  }
+
 
   
   int *res_e = malloc(2 * sizeof(int));
-  if (res_e == NULL){
+
+
+  if (num == NULL || num_e == NULL || res == NULL || res_e == NULL){
     exit(EXIT_FAILURE);
   }
 
